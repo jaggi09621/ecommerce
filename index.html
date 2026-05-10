@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maine Commerce</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Maine Commerce</h1>
+    <button id="cartBtn" aria-label="Open cart">🛒 Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Build your first e-commerce storefront</h2>
+      <p>Simple starter template with products, cart, and total.</p>
+    </section>
+
+    <section>
+      <h3>Products</h3>
+      <div id="productGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <aside id="cartPanel" class="cart-panel hidden" aria-live="polite">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart">✕</button>
+    </div>
+    <ul id="cartItems"></ul>
+    <p class="total">Total: $<span id="cartTotal">0.00</span></p>
+    <button class="checkout">Checkout</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
